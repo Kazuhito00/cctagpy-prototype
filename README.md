@@ -2,12 +2,10 @@
 
 # cctagpy
 
+https://github.com/user-attachments/assets/be13113f-e8fb-4436-af6c-928edb6b2e1b
+
 [CCTag](https://github.com/alicevision/CCTag) のCPU検出パイプラインを pure-Python(NumPy/SciPy/Numba)に移植したものです。<br>
 同心円フィデューシャルマーカーの検出・識別を行います。OpenCV/CUDAには依存しません。
-
-`alicevision/CCTag` のC++ CPUパイプライン(画像ピラミッド、Canny系エッジ/勾配検出、細線化、投票、
-楕円フィッティング/growing、マーカーバンクに対する識別)をモジュール単位で移植しています。<br>
-移植した各モジュールのdocstringに、対応するC++ファイルと挙動上の注意点を記載しています。
 
 # Features
 - OpenCV/CUDAに依存しません(NumPy/SciPy/Numbaのみ)。Pillowは画像ファイルのデコードにだけ使います
