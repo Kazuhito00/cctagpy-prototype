@@ -1,0 +1,29 @@
+[project]
+name = "cctagpy"
+version = "0.1.0"
+description = "Pure-Python (NumPy/SciPy) port of the CCTag CPU detection pipeline"
+readme = "README.md"
+license = "MPL-2.0"
+license-files = ["LICENSE"]
+authors = [
+    { name = "KazuhitoTakahashi", email = "kazuhito.takahashi.dev@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numba>=0.67.0",
+    "numpy>=2.5.3",
+    "pillow>=12.3.0",
+    "scipy>=1.18.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["tests"]
