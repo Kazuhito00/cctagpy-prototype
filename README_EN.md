@@ -2,12 +2,10 @@
 
 # cctagpy
 
+https://github.com/user-attachments/assets/be13113f-e8fb-4436-af6c-928edb6b2e1b
+
 A pure-Python (NumPy/SciPy/Numba) port of the CPU detection pipeline of [CCTag](https://github.com/alicevision/CCTag).<br>
 It detects and identifies concentric-circle fiducial markers, and does not depend on OpenCV or CUDA.
-
-The C++ CPU pipeline of `alicevision/CCTag` (image pyramid, Canny-style edge/gradient detection, thinning, voting,
-ellipse fitting/growing, and identification against the marker bank) is ported module by module.<br>
-The docstring of each ported module names the corresponding C++ file and notes behavioral caveats.
 
 # Features
 - No dependency on OpenCV or CUDA (NumPy/SciPy/Numba only). Pillow is used only to decode image files
